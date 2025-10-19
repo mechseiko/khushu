@@ -40,14 +40,14 @@ summary::-webkit-details-marker {
 
 @theme {
   --font-helvetica: 'Helvetica', system-ui, sans-serif;
-
-  /* Fischerbon lms color palette */
-  --color-primary: #3c97d0; /* Primary – Blue for buttons, links, and key actions */
+  --color-primary: #071c59; /* Primary – Buttons, links, and key actions */
   --color-primaryHover: #174579;
-  --color-secondary: #2d89ef; /* Secondary – Light gray for borders, secondary text, and UI elements */
-  --color-accent: #acb4b9;
-  --color-gray: #364153;
-  --color-muted: #f5f7fa; /* Muted – Soft background for cards, containers, and light mode */
+  --color-secondary: #75321e; /* Secondary – Borders, secondary text, and UI elements */
+  --color-accent: #000624;
+  /* --color-grey: #364153; */
+  --color-grey: #3f3f3f;
+  --color-light: #f5f7fa;
+  --color-muted: #c0c0bf; /* Muted – Soft background for cards, containers, and light mode */
   --color-dark: #1a1a1a; /* Dark – Text, headers, and dark mode backgrounds */
 }
 
@@ -55,10 +55,10 @@ summary::-webkit-details-marker {
   --animate-navBar: navBar 0.5s ease-out 0s 1;
   @keyframes navBar {
     0% {
-      transform: translateX(-120px);
+      transform: translateY(-1px);
     }
     100% {
-      transform: translateX(0px);
+      transform: translateY(0px);
     }
   }
 }

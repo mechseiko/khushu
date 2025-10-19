@@ -1,12 +1,17 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Kushoo from '../src/pages/Kushoo';
+import Lander from '../src/pages/Lander/Lander';
+import Position from './pages/Position/Position';
+import Positions from './pages/Positions/Positions';
 
 const App = () => {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Kushoo />} />
+          <Route path="/" element={<Lander />} />
+          <Route path="/positions" element={<Positions />} />
+          <Route path="/*" element={<Positions />} />
+          <Route path="/positions/:position" element={<Position />} />
         </Routes>
       </BrowserRouter>
     </>
