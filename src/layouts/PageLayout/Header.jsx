@@ -9,17 +9,17 @@ import Container from '../../components/Container';
 function Header(props) {
   const [showHeader, setShowHeader] = useState(false);
   return (
-    <div className="bg-accent sticky top-0 z-9999 text-muted">
+    <div className="bg-accent md:opacity-90 sticky top-0 z-9999 text-light">
       <Container>
         <header className="hidden w-full md:flex flex-row justify-between items-center px-3 py-1">
           <Logo />
           <div className="flex justify-center gap-5 items-center">
-            <NavBar className="flex justify-center gap-x-5 *:hover:underline" />
-            <div className="text-center flex gap-2 items-center *:cursor-pointer">
-              <Link to="https://github.com/mechseiko/kushoo">
+            <NavBar className="flex justify-center items-center gap-x-1" />
+            <div className="text-center flex flex-row-reverse gap-2 items-center *:cursor-pointer">
+              <Link target="_blank" to="https://github.com/mechseiko/kushoo">
                 <Github size={28} />
               </Link>
-              <Link to="https://devseiko.vercel.app">
+              <Link target="_blank" to="https://devseiko.vercel.app">
                 <MSquare size={28} />
               </Link>
             </div>
@@ -40,8 +40,8 @@ function Header(props) {
 
           {showHeader && (
             <ul className="animate-navBar">
-              <NavBar className="my-5 ml-3 gap-5 flex flex-col items-start text-left *:p-2 *:w-full" />
-              <p className="ml-5">&copy; Kushoo {new Date().getFullYear()}.</p>
+              <NavBar className="my-3 ml-3 gap-1 flex flex-col items-start text-left *:p-2 *:w-full" />
+              <p className="ml-5">&copy; Khushu {new Date().getFullYear()}.</p>
             </ul>
           )}
         </header>

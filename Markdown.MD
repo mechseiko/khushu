@@ -23,3 +23,34 @@ overlays AR three.ar.js, WebXR, 8thWall Speech Web Speech API, annyang.js
 Multilingual i18next, react-intl You’ve got the engine. Now let’s build
 the soul of Kushoo. Want to start with one of these — like adding audio
 recitation or step-by-step prayer transitions? I’ll walk you through it.
+
+Every prayer position has five things:
+
+When to say
+when exactly to say?
+
+What to say
+audio, transliteration arabic and english translation
+
+How to say
+how many times?, silent or loud?
+
+the prayer position itself
+3d model
+
+<!-- {/_ <div className="sketchfab-embed-wrapper">
+{' '}
+<iframe
+        title="kushoo"
+        frameBorder="0"
+        allowFullScreen
+        allow="autoplay; fullscreen; xr-spatial-tracking"
+        xr-spatial-tracking
+        execution-while-out-of-viewport
+        execution-while-not-rendered
+        web-share
+        src="https://sketchfab.com/models/eb0f80a7278243b4988b159fc957bbd5/embed"
+    >
+{' '}
+</iframe>
+</div> _/} -->

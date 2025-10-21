@@ -1,13 +1,16 @@
 import React from 'react';
 import Hero from './Hero';
-import Layout from '../../layouts/PageLayout/Layout';
+import PageLayout from '../../layouts/PageLayout/PageLayout';
+import Container from '../../components/Container';
 
 function Lander() {
   return (
     <div>
-      <Layout>
-        <Hero />
-      </Layout>
+      <PageLayout>
+        <Container>
+          <Hero />
+        </Container>
+      </PageLayout>
     </div>
   );
 }

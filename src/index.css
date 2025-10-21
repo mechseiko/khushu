@@ -44,10 +44,9 @@ summary::-webkit-details-marker {
   --color-primaryHover: #174579;
   --color-secondary: #75321e; /* Secondary – Borders, secondary text, and UI elements */
   --color-accent: #000624;
-  /* --color-grey: #364153; */
   --color-grey: #3f3f3f;
   --color-light: #f5f7fa;
-  --color-muted: #c0c0bf; /* Muted – Soft background for cards, containers, and light mode */
+  --color-muted: #e5e7eb; /* Muted – Soft background for cards, containers, and light mode */
   --color-dark: #1a1a1a; /* Dark – Text, headers, and dark mode backgrounds */
 }
 
@@ -59,6 +58,18 @@ summary::-webkit-details-marker {
     }
     100% {
       transform: translateY(0px);
+    }
+  }
+}
+
+@theme {
+  --animate-asideBar: asideBar 0.5s ease-in 0s 1.5;
+  @keyframes asideBar {
+    0% {
+      transform: translateX(-70px);
+    }
+    100% {
+      transform: translateX(0px);
     }
   }
 }

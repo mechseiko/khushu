@@ -9,7 +9,7 @@ const Cta = ({ className }) => {
           Get Started
         </button>
       </Link>
-      <Link to="positions">
+      <Link to="about">
         <button className="md:px-6 md:py-3 p-2 bg-grey text-muted rounded text-sm font-medium cursor-pointer">
           Learn More
         </button>
