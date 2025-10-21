@@ -16,7 +16,7 @@ function Header(props) {
           <div className="flex justify-center gap-5 items-center">
             <NavBar className="flex justify-center items-center gap-x-1" />
             <div className="text-center flex flex-row-reverse gap-2 items-center *:cursor-pointer">
-              <Link target="_blank" to="https://github.com/mechseiko/kushoo">
+              <Link target="_blank" to="https://github.com/mechseiko/khushu">
                 <Github size={28} />
               </Link>
               <Link target="_blank" to="https://devseiko.vercel.app">

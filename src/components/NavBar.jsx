@@ -4,8 +4,12 @@ export const navItems = [
   { to: '/', label: 'Home' },
   { to: '/positions', label: 'Learn' },
   { to: '/books', label: 'Books' },
-  { to: "https://devseiko.vercel.app/contact?from=khushu", label: 'Contribute' },
-  { to: '/about', label: 'About' },
+    { to: '/about', label: 'About' },
+
+  {
+    to: 'https://devseiko.vercel.app/contact?from=khushu',
+    label: 'Contribute',
+  },
 ];
 function NavBar({ className }) {
   const location = useLocation();
@@ -16,10 +20,10 @@ function NavBar({ className }) {
       {navItems.map((navItem, index) => {
         return (
           <Link
-          title={navItem.label}
+            title={navItem.label}
             target={`${!navItem.to.startsWith('/') && '_blank'}`}
             key={index}
-            className={`text-md py-0.5 px-2 rounded-sm text-light ${currentNavItem === navItem.to ?  'bg-primary' : 'hover:bg-primaryHover'}`}
+            className={`text-md py-0.5 px-2 rounded-sm text-light ${currentNavItem === navItem.to ? 'bg-primary' : 'hover:bg-primaryHover'}`}
             to={navItem.to}
           >
             {navItem.label}

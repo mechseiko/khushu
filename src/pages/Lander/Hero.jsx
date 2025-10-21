@@ -13,7 +13,8 @@ const Hero = () => {
           <span className="text-secondary">In 3D</span>
         </h1>
         <p className="md:text-[16px] text-sm text-grey mb-10 md:max-w-md md:mx-0 mx-10">
-          Khushu teaches you how to pray correctly, combining audio, video, and interactive 3D experiences to help you build focus in salah.
+          Khushu teaches you how to pray correctly, combining audio, video, and
+          interactive 3D experiences to help you build focus in salah.
         </p>
         <Cta
           className={
