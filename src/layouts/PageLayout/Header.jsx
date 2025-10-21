@@ -9,7 +9,7 @@ import Container from '../../components/Container';
 function Header(props) {
   const [showHeader, setShowHeader] = useState(false);
   return (
-    <div className="bg-accent md:opacity-90 sticky top-0 z-9999 text-light">
+    <div className="bg-accent md:opacity-90 sticky top-0 z-9991 text-light">
       <Container>
         <header className="hidden w-full md:flex flex-row justify-between items-center px-3 py-1">
           <Logo />
